@@ -1,0 +1,27 @@
+
+ /**
+     * 事件处理
+     */
+    public class EventHandler {
+
+        public void onItemClick() {
+
+        }
+    }
+
+public void onCheckedChanged(CompoundButton view, boolean isChecked) {
+
+        }
+
+public void onCheckedChanged(RadioGroup view, int checkedId) {
+
+        }
+
+android:onClick="@{()->handler.onItemClick()}"
+
+android:onClick="@{()->handler.onItemClick(position)}"
+
+android:onCheckedChanged="@{(view,isChecked)->handler.onCheckedChanged(view,isChecked)}"
+
+android:onCheckedChanged="@{(group,checkedId)->handler.onCheckedChanged(group,checkedId)}"
+

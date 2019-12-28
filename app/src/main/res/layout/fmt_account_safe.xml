@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="AccountSafeDb">
+        <!--<variable-->
+        <!--name="data"-->
+        <!--type="" />-->
+        <variable
+            name="handler"
+            type="com.junzhitian.rxjavaretrofitmvvm.fragment.AccountSafeFragment.EventHandler" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/page_bg"
+        android:orientation="vertical">
+
+        <com.junzhitian.basicapp.qmui.qmuiwidget.titlebar.TitleBar
+            android:id="@+id/title_bar"
+            style="@style/WhiteThemeBlackBackTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            app:title="@string/account_safe" />
+
+        <TextView
+            style="@style/list_item_more_style"
+            android:layout_marginTop="@dimen/dp_10"
+            android:onClick="@{()->handler.loginPwd()}"
+            android:text="@string/login_pwd" />
+
+        <TextView
+            style="@style/list_item_more_style"
+            android:layout_marginTop="@dimen/dp_1"
+            android:onClick="@{()->handler.payPwd()}"
+            android:text="@string/pay_pwd" />
+
+        <TextView
+            style="@style/list_item_more_style"
+            android:layout_marginTop="@dimen/dp_1"
+            android:onClick="@{()->handler.updatePhone()}"
+            android:text="@string/update_phone" />
+    </LinearLayout>
+</layout>

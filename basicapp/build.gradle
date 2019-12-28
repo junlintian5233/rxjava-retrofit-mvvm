@@ -1,0 +1,77 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    api 'androidx.cardview:cardview:1.0.0'
+    api 'androidx.recyclerview:recyclerview:1.0.0'
+    api 'com.alibaba:fastjson:1.2.58'
+
+    //消息总线
+    api 'org.greenrobot:eventbus:3.0.0'
+    //圆形图片
+    api 'com.makeramen:roundedimageview:2.3.0'
+    api 'com.github.lygttpod:SuperTextView:1.1.2'
+    //流式布局
+    api 'com.zhy:flowlayout-lib:1.0.3'
+    api 'de.hdodenhof:circleimageview:2.1.0'
+    //选项卡
+    api 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    //小红点可拖拽
+    api 'q.rorbin:badgeview:1.1.0'
+    //侧滑删除
+    api 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.5'
+    api 'com.github.chenBingX:SuperTextView:3.1.6.2'
+    //图片加载
+    api 'com.github.bumptech.glide:glide:3.7.0'
+    //banner
+    api 'com.bigkoo:convenientbanner:2.0.5'
+    //api 'com.youth.banner:banner:1.4.9'
+    //动画
+    //api 'com.github.florent37:viewanimator:1.0.5'
+    //共同头部吸附（tablayout）+ViewPager+ListView http://blog.csdn.net/w7822938/article/details/47173047
+    //api 'com.github.cpoopc:scrollablelayoutlib:1.0.1'
+    //api project(path: ':jiaozivideoplayer')
+    api 'cn.jzvd:jiaozivideoplayer:7.0.5'
+    //选择器
+    api 'com.contrarywind:Android-PickerView:4.1.8'
+    api 'com.google.android.material:material:1.0.0-alpha1'
+    api 'com.jakewharton.rxbinding2:rxbinding:2.1.1'
+
+    //图片选择
+    api 'com.github.xiaoyuanhu.boxing:boxing:1.0.4.1'
+    api 'com.github.xiaoyuanhu.boxing:boxing-impl:1.0.4.1'
+
+    api('com.yalantis:ucrop:2.2.0') {
+        exclude group: 'com.android.support'
+        exclude group: 'com.squareup.okio'
+        exclude group: 'com.squareup.okhttp3'
+    }
+
+    api 'org.jsoup:jsoup:1.12.1'
+
+    api project(path: ':addressselector')
+    api project(path: ':banner')
+
+}

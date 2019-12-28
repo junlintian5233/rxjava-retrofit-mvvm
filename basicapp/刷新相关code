@@ -1,0 +1,122 @@
+
+
+implements LogisticsListView, OnRefreshListener, OnLoadMoreListener {
+
+    private List<Logistics>          mDataList    = new ArrayList<>();
+    private EmptyData                mEmptyData   = new EmptyData();
+    private int                      mCurrentPage = 1;
+    private SmartRefreshLayout       mRefreshLayout;
+    private FavoriteLogisticsAdapter mAdapter;
+
+
+
+
+ @Override
+    public void initView(Bundle savedInstanceState) {
+        mRefreshLayout = mDataBinding.refreshLayout;
+
+        mDataBinding.recycleView.setLayoutManager(new LinearLayoutManager(mActivity));
+        mAdapter = new FavoriteLogisticsAdapter(mActivity, mDataList);
+        mDataBinding.recycleView.setAdapter(mAdapter);
+    }
+
+    @Override
+    public void bindEvent() {
+        super.bindEvent();
+        mRefreshLayout.setOnRefreshListener(this);
+        mRefreshLayout.setOnLoadMoreListener(this);
+    }
+
+
+    private void loadData() {
+
+    }
+
+
+    @Override
+    public void onListResponse(List<Logistics> list) {
+        finishRefresh();
+        if (mCurrentPage == 1) {
+            mDataList.clear();
+            mEmptyData.setEmpty(list.isEmpty());
+        } else {
+            if (list.isEmpty()) {
+                mCurrentPage--;
+            }
+        }
+        mDataList.addAll(list);
+        mAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onLoadFailure() {
+        finishRefresh();
+        if (mCurrentPage > 1) {
+            mCurrentPage--;
+        }
+    }
+
+
+    @Override
+    public void onRefresh(@NonNull RefreshLayout refreshLayout) {
+        mCurrentPage = 1;
+        loadData();
+    }
+
+    @Override
+    public void onLoadMore(@NonNull RefreshLayout refreshLayout) {
+        mCurrentPage++;
+        loadData();
+    }
+
+    /**
+     * 停止刷新
+     */
+    private void finishRefresh() {
+        if (mCurrentPage == 1) {
+            mDataBinding.refreshLayout.finishRefresh();
+        } else {
+            mDataBinding.refreshLayout.finishLoadMore();
+        }
+    }
+
+
+  <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/page_bg">
+
+        <LinearLayout style="@style/MatchMatch.Vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_150"
+                android:gravity="center"
+                android:src="@drawable/ic_empty_data"
+                android:visibility="@{data.empty?View.VISIBLE:View.GONE}" />
+
+            <TextView
+                style="@style/MatchWrap"
+                android:layout_marginTop="@dimen/dp_15"
+                android:gravity="center"
+                android:text="暂无数据~"
+                android:textAppearance="@style/text_style_999_15"
+                android:visibility="@{data.empty?View.VISIBLE:View.GONE}" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+      <import type="android.view.View" />
+
+        <variable
+            name="data"
+            type="com.cnsunrun.chaozudianshang.model.viewdata.EmptyData" />

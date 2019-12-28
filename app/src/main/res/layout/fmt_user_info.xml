@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="UserInfoDb">
+
+        <variable
+            name="data"
+            type="com.junzhitian.rxjavaretrofitmvvm.model.viewdata.UserData" />
+
+        <variable
+            name="handler"
+            type="com.junzhitian.rxjavaretrofitmvvm.fragment.UserInfoFragment.EventHandler" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/divider"
+        android:orientation="vertical">
+
+        <com.junzhitian.basicapp.qmui.qmuiwidget.titlebar.TitleBar
+            style="@style/WhiteThemeBlackBackTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            app:title="@string/user_info" />
+
+
+        <RelativeLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:onClick="@{()->handler.avatar()}"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_15"
+            android:paddingBottom="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_left"
+                style="@style/text_style_333_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/avart" />
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                imageUrl="@{data.userinfo.avatar}"
+                android:layout_width="@dimen/dp_56"
+                android:layout_height="@dimen/dp_56"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_toLeftOf="@+id/iv_more"
+                android:src="@drawable/ic_def_head" />
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/more" />
+        </RelativeLayout>
+
+        <com.junzhitian.rxjavaretrofitmvvm.widget.SettingView
+            content="@{data.userinfo.nickname}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:onClick="@{()->handler.username()}"
+            app:sv_left_text="@string/user_name" />
+
+        <com.junzhitian.rxjavaretrofitmvvm.widget.SettingView
+            android:id="@+id/sv_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:onClick="@{()->handler.gender()}"
+            app:sv_left_text="@string/sex" />
+
+        <com.junzhitian.rxjavaretrofitmvvm.widget.SettingView
+            android:id="@+id/sv_birthday"
+            content="@{data.userinfo.birthday}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:onClick="@{()->handler.birthday()}"
+            app:sv_left_text="@string/birthday" />
+
+        <TextView
+            style="@style/text_style_999_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_14"
+            android:text="@string/tip_modify_username" />
+    </LinearLayout>
+</layout>

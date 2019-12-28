@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_transparent">#00000000</color>
+    <color name="colorPrimary">#1b82d2</color>
+    <color name="colorPrimaryDark">#1b82d2</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue">#42a1f8</color>
+
+    <color name="comm_color">#EA970E</color>
+    <color name="title_color">#ff7920</color>
+    <color name="divide_line_in">#f2f2f2</color>
+    <color name="divide_line_out">#dfdfdf</color>
+    <color name="main_text_color">#333333</color>
+    <color name="hint_text_color">#999999</color>
+    <color name="white_button_normal">#ffffff</color>
+    <color name="common_pressed">#DADADA</color>
+    <color name="while_button_press">#33ffffff</color>
+    <color name="backgroud_color">#f2f2f2</color>
+    <color name="delete_red">#FF5136</color>
+    <color name="blue_color">#00a0e9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green_color">#8bce25</color>
+    <color name="green_a7dc57">#a7dc57</color>
+    <color name="green_color_bbd594">#bbd594</color>
+    <color name="green_color_5cba46">#5cba46</color>
+    <color name="red_color">#fc5455</color>
+    <color name="red_color_ed3823">#ed3823</color>
+    <color name="red_color_ff7879">#ff7879</color>
+    <color name="red_color_ff0000">#ff0000</color>
+    <color name="red_color_ff7e37">#ff7e37</color>
+
+    <color name="orange_color_f97823">#f97823</color>
+    <color name="orange_color_ff7920">#ff7920</color>
+    <color name="orange_color_ff632c">#ff632c</color>
+
+    <color name="gray_color_dde1e4">#dde1e4</color>
+    <color name="gray_color_dadada">#DADADA</color>
+    <color name="gray_color_fafafa">#fafafa</color>
+    <color name="gray_color_808080">#808080</color>
+
+    <color name="gray_color_ddd">#dddddd</color>
+    <color name="gray_color_d9d9d9">#d9d9d9</color>
+    <color name="gray_color_e8e8">#e8e8e8</color>
+    <color name="gray_color_e9e9">#e9e9e9</color>
+    <color name="gray_color_6b7676">#6b7676</color>
+    <color name="gray_color_1a1a1a">#1a1a1a</color>
+    <color name="gray_color_616161">#616161</color>
+    <color name="gray_color_4d4d">#4d4d4d</color>
+    <color name="gray_color_6d6d6d">#6d6d6d</color>
+    <color name="gray_color_b2a8a8">#b2a8a8</color>
+    <color name="gray_color_f5f5">#f5f5f5</color>
+    <color name="gray_color_abab">#ababab</color>
+    <color name="gray_color_cdcd">#cdcdcd</color>
+    <color name="gray_color_ebeb">#ebebeb</color>
+    <color name="gray_color_f0f0">#f0f0f0</color>
+    <color name="black_color">#000000</color>
+    <color name="black_color_1616">#161616</color>
+    <color name="black_color_1818">#181818</color>
+    <color name="black_color_051b28">#051b28</color>
+    <color name="black_color_6868">#686868</color>
+    <color name="black_lucency_11">#11000000</color>
+    <color name="black_lucency_33">#33000000</color>
+    <color name="black_lucency_3c">#3C000000</color>
+    <!--文字颜色-->
+    <color name="text_color_333">#333333</color>
+    <color name="text_color_666">#666666</color>
+    <color name="text_color_888">#888888</color>
+    <color name="text_color_999">#999999</color>
+    <color name="text_color_ccc">#cccccc</color>
+    <!--按钮默认背景/边框色 默认文字颜色-->
+    <color name="main_button_color">#1d208b</color>
+    <color name="main_button_color_press">#AA1d208b</color>
+    <color name="main_button_color_disenable">#dadada</color>
+
+    <color name="default_btn_text_color">@color/white</color>
+
+    <!--底部弹窗菜单条目,标题的默认背景色-->
+    <color name="qmui_bottom_sheet_title_bg">@color/white</color>
+
+
+    <!--尚软常用颜色-->
+    <color name="clr_999">#999999</color>
+    <color name="clr_666">#666666</color>
+    <color name="clr_333">#333333</color>
+    <color name="clr_eee">#eeeeee</color>
+    <color name="clr_ccc">#cccccc</color>
+    <color name="clr_b3">#B3B3B3</color>
+    <color name="clr_e6">#E6E6E6</color>
+    <color name="clr_e5">#E5E5E5</color>
+    <color name="clr_f5">#F5F5F5</color>
+    <color name="clr_f9">#F9F9F9</color>
+    <color name="black">#000000</color>
+    <color name="red">#E60012</color>
+
+    <!--新app需要配置的颜色-->
+    <color name="themeColor">#E60012</color>
+    <color name="themeColor90">#95E60012</color>
+    <color name="themeColor20">#20E60012</color>
+    <color name="divider">#F5F5F5</color>
+</resources>

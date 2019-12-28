@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/qmui_bottom_sheet_grid_padding_vertical"
+    android:paddingTop="@dimen/qmui_bottom_sheet_grid_padding_vertical"
+    tools:ignore="Overdraw">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <!-- 只有第一行时会在代码中去掉paddingBottom -->
+        <LinearLayout
+            android:id="@+id/bottom_sheet_first_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_second_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/bottom_sheet_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qmui_bottom_sheet_button_height"
+        android:layout_marginTop="@dimen/qmui_bottom_sheet_grid_padding_vertical"
+        android:background="#DEE0E2"
+        android:gravity="center"
+        android:text="关 闭"
+        android:textColor="@color/text_color_666"
+        android:textSize="15sp" />
+
+</LinearLayout>

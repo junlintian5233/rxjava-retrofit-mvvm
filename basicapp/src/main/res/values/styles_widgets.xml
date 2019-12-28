@@ -1,0 +1,200 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--默认按钮样式-->
+    <style name="RoundBtnWrap" parent="CommonUITheme.RoundButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="smallBtn" parent="@style/RoundBtnWrap"></style>
+
+    <style name="smallBtnR1" parent="@style/RoundBtnWrap">
+        <item name="qmui_radius">@dimen/buttons_corner_radius1</item>
+    </style>
+
+    <style name="smallBtnR2" parent="@style/RoundBtnWrap">
+        <item name="qmui_radius">@dimen/buttons_corner_radius2</item>
+    </style>
+
+    <style name="smallBtnRC" parent="@style/RoundBtnWrap">
+        <item name="qmui_isRadiusAdjustBounds">true</item>
+    </style>
+
+    <style name="smallBtnBottomR1" parent="@style/RoundBtnWrap">
+        <item name="qmui_radiusBottomLeft">@dimen/buttons_corner_radius1</item>
+        <item name="qmui_radiusBottomRight">@dimen/buttons_corner_radius1</item>
+    </style>
+
+    <style name="smallBtnBottomR2" parent="@style/RoundBtnWrap">
+        <item name="qmui_radiusBottomLeft">@dimen/buttons_corner_radius2</item>
+        <item name="qmui_radiusBottomRight">@dimen/buttons_corner_radius2</item>
+    </style>
+
+    <style name="smallBtnTopR1" parent="@style/RoundBtnWrap">
+        <item name="qmui_radiusTopLeft">@dimen/buttons_corner_radius1</item>
+        <item name="qmui_radiusTopRight">@dimen/buttons_corner_radius1</item>
+    </style>
+
+    <style name="smallBtnTopR2" parent="@style/RoundBtnWrap">
+        <item name="qmui_radiusTopLeft">@dimen/buttons_corner_radius2</item>
+        <item name="qmui_radiusTopRight">@dimen/buttons_corner_radius2</item>
+    </style>
+
+    <style name="smallBtnBorder" parent="@style/RoundBtnWrap">
+        <item name="android:textColor">@color/main_button_color</item>
+        <item name="qmui_backgroundColor">@color/white</item>
+        <item name="qmui_borderColor">@color/main_button_color</item>
+        <item name="qmui_borderWidth">@dimen/btn_border_width</item>
+    </style>
+
+    <style name="smallBtnBorderR1" parent="@style/smallBtnBorder">
+        <item name="qmui_radius">@dimen/buttons_corner_radius1</item>
+    </style>
+
+    <style name="smallBtnBorderR2" parent="@style/smallBtnBorder">
+        <item name="qmui_radius">@dimen/buttons_corner_radius1</item>
+    </style>
+
+    <style name="smallBtnBorderRC" parent="@style/smallBtnBorder">
+        <item name="qmui_isRadiusAdjustBounds">true</item>
+    </style>
+
+    <style name="RoundBtnSubmit" parent="CommonUITheme.RoundButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+    </style>
+
+    <style name="submitBtn" parent="@style/RoundBtnSubmit"></style>
+
+    <style name="submitBtnRC" parent="@style/RoundBtnSubmit">
+        <item name="qmui_isRadiusAdjustBounds">true</item>
+    </style>
+
+    <style name="submitBtnR1" parent="@style/RoundBtnSubmit">
+        <item name="qmui_radius">@dimen/buttons_corner_radius1</item>
+    </style>
+
+    <style name="submitBtnR2" parent="@style/RoundBtnSubmit">
+        <item name="qmui_radius">@dimen/buttons_corner_radius2</item>
+    </style>
+
+
+    <!--SwipeMenuLayout btn-->
+    <style name="swipe_menu_style">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#E60012</item>
+        <item name="android:textAppearance">@style/text_style_white_12</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="radiobtn_banner">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:background">@drawable/slt_rbtn_banner</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/text_style_white_11</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!--titlebar-->
+    <style name="DefTitleBarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+
+    <!--黑色主题titlebar-->
+    <style name="BackTitleBarStyle" parent="DefTitleBarStyle">
+        <item name="leftAsFinish">true</item>
+        <item name="leftIcon">@drawable/icon_goback_black</item>
+        <item name="leftVisible">visible</item>
+    </style>
+
+    <style name="WhiteBackTitleBarStyle" parent="DefTitleBarStyle">
+        <item name="leftAsFinish">true</item>
+        <item name="leftIcon">@drawable/icon_goback_white</item>
+        <item name="leftVisible">visible</item>
+    </style>
+
+    <!--白色主题titlebar-->
+    <style name="WhiteThemeTitleBarStyle">
+        <item name="backgroundColor">@color/white</item>
+        <item name="titleColor">@color/text_color_333</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+
+    <!--白色主题titlebar，带返回键-->
+    <style name="WhiteThemeBlackBackTitleBar" parent="WhiteThemeTitleBarStyle">
+        <item name="leftIcon">@drawable/return_black</item>
+        <item name="leftVisible">visible</item>
+        <item name="leftAsBackPress">true</item>
+        <item name="bottomDividerHeight">1dp</item>
+    </style>
+
+
+    <style name="badge_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shape_badge</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/themeColor</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+
+    <!--密码输入框-->
+    <style name="GridPasswordView" />
+
+    <style name="GridPasswordView.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <style name="GridPasswordView.EditText" parent="GridPasswordView.TextView">
+        <item name="android:cursorVisible">false</item>
+    </style>
+
+    <style name="GridPasswordView.Divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+
+
+    <!-- 无标题对话框 -->
+    <style name="NoTitleDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!--弹出透明对话框-->
+    <style name="DialogTransparent" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!--边框-->
+        <item name="android:windowIsFloating">true</item> <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item> <!--半透明-->
+        <item name="android:windowNoTitle">true</item> <!--无标题-->
+        <item name="android:background">@android:color/transparent</item> <!--背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item> <!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item> <!--模糊-->
+        <item name="android:backgroundDimAmount">0.6</item>  <!--背景透明度-->
+        <item name="android:windowAnimationStyle">@android:style/Theme.InputMethod</item>
+    </style>
+    <!--输入对话框-->
+    <style name="DialogBottomSheetEdit" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item> <!--不浮现在活动上-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/color_transparent</item>
+    </style>
+</resources>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="com.junzhitian.rxjavaretrofitmvvm.common.Config" />
+        <!--<variable-->
+        <!--name="data"-->
+        <!--type="" />-->
+        <variable
+            name="isPurchase"
+            type="Boolean" />
+
+        <variable
+            name="showBalance"
+            type="Boolean" />
+
+        <variable
+            name="handler"
+            type="com.junzhitian.rxjavaretrofitmvvm.fragment.PayFragment.EventHandler" />
+    </data>
+
+    <LinearLayout
+        style="@style/MatchMatch.Vertical"
+        android:background="@color/page_bg">
+
+
+        <com.junzhitian.basicapp.qmui.qmuiwidget.titlebar.TitleBar
+            android:id="@+id/title_bar"
+            style="@style/WhiteThemeBlackBackTitleBar"
+            title="@{isPurchase?@string/order_pay:@string/balance_charge}"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/WrapWrap"
+                android:text="@{isPurchase?@string/pay_money:@string/charge_money}"
+                android:textAppearance="@style/text_style_333_14" />
+
+            <TextView
+                android:id="@+id/tv_pay_money"
+                style="@style/WrapWrap"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="25dp"
+                android:textAppearance="@style/text_style_333_14"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:visibility="@{isPurchase?View.VISIBLE:View.GONE}" />
+
+            <RelativeLayout
+                style="@style/WrapWrap.Horizontal"
+                android:layout_marginBottom="25dp"
+                android:visibility="@{isPurchase?View.GONE:View.VISIBLE}">
+
+                <LinearLayout
+                    android:id="@+id/ll_charge"
+                    style="@style/WrapWrap.Horizontal"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:id="@+id/tv_rmb"
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="14dp"
+                        android:text="@string/rmb"
+                        android:textAppearance="@style/text_style_333_14"
+                        android:textColorHint="@color/clr_999"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_charge_money"
+                        style="@style/WrapWrap"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="14dp"
+                        android:background="@null"
+                        android:digits="0123456789."
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:maxLength="8"
+                        android:minWidth="@dimen/dp_60"
+                        android:paddingRight="@dimen/dp_5"
+                        android:singleLine="true"
+                        android:textAppearance="@style/text_style_333_14"
+                        android:textColorHint="@color/clr_999"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/ll_charge"
+                    android:layout_alignLeft="@+id/ll_charge"
+                    android:layout_alignRight="@+id/ll_charge"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/clr_999" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/fragment_padding_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:text="选择支付方式"
+            android:textAppearance="@style/text_style_333_14"></TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_152">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onCheckedChanged="@{(view,checkedId)->handler.onCheckedChanged(view,checkedId)}"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbtn_alipay"
+                    style="@style/fragment_padding_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/dp_7"
+                    android:gravity="center_vertical"
+                    android:text="支付宝"
+                    android:textAppearance="@style/text_style_333_15" />
+
+                <View
+                    style="@style/divider_style"
+                    android:layout_height="@dimen/dp_1" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_wechat"
+                    style="@style/fragment_padding_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/dp_7"
+                    android:gravity="center_vertical"
+                    android:text="微信"
+                    android:textAppearance="@style/text_style_333_15" />
+
+                <View
+                    style="@style/divider_style"
+                    android:layout_height="@dimen/dp_1" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_wellet"
+                    style="@style/fragment_padding_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/dp_7"
+                    android:gravity="center_vertical"
+                    android:text="余额"
+                    android:textAppearance="@style/text_style_333_15"
+                    android:visibility="@{showBalance?View.VISIBLE:View.GONE}">
+
+                </RadioButton>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_50"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dp_90"
+                android:gravity="center_vertical"
+                android:text="@{@string/balance_+Config.userInfo.balance+@string/yuan}"
+                android:textAppearance="@style/text_style_999_12"
+                android:visibility="@{showBalance?View.VISIBLE:View.GONE}"></TextView>
+        </RelativeLayout>
+
+        <View style="@style/MatchAuto" />
+
+        <RelativeLayout
+            style="@style/fragment_padding_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10">
+
+            <com.junzhitian.basicapp.qmui.qmuiwidget.roundwidget.QMUIRoundButton
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:onClick="@{()->handler.pay()}"
+                android:text="去支付"
+                app:qmui_backgroundColor="@color/themeColor"
+                app:qmui_radius="@dimen/dp_1" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

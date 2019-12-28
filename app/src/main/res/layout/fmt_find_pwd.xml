@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="FindPwdDb">
+
+        <variable
+            name="data"
+            type="com.junzhitian.rxjavaretrofitmvvm.model.viewdata.LoginData" />
+
+
+        <variable
+            name="handler"
+            type="com.junzhitian.rxjavaretrofitmvvm.fragment.login.FindPasswordFragment.EventHandler" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.junzhitian.basicapp.qmui.qmuiwidget.titlebar.TitleBar
+            android:id="@+id/title_bar"
+            style="@style/WhiteThemeBlackBackTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            app:leftAsFinish="false"
+            app:title="@string/find_pwd" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp_25"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15">
+
+
+            <EditText
+                android:id="@+id/et_account"
+                style="@style/edit_style_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/phone"
+                android:hint="@string/pls_input_telphone"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="@={data.account}"></EditText>
+
+            <View
+                style="@style/divider_style_1dp"
+                android:layout_marginBottom="20dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_sms_code"
+                    style="@style/edit_style_verify_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/sms_code"
+                    android:hint="@string/sms_code"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:text="@={data.smsCode}"></EditText>
+
+                <TextView
+                    android:id="@+id/tv_get_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:onClick="@{()->handler.getCode()}"
+                    android:text="@string/get_code"
+                    android:textColor="@color/slt_verify_code_txt"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <View
+                style="@style/divider_style_1dp"
+                android:layout_marginBottom="20dp" />
+
+            <EditText
+                android:id="@+id/et_pwd"
+                style="@style/edit_style_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/pwd"
+                android:hint="@string/set_login_pwd"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="@={data.password}"></EditText>
+
+
+            <View
+                style="@style/divider_style_1dp"
+                android:layout_marginBottom="20dp" />
+
+            <EditText
+                android:id="@+id/et_confirm_pwd"
+                style="@style/edit_style_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/pwd_again"
+                android:hint="@string/confirm_login_pwd"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="@={data.repPassword}"></EditText>
+
+
+            <View
+                style="@style/divider_style_1dp"
+                android:layout_marginBottom="30dp" />
+
+
+            <com.junzhitian.basicapp.qmui.qmuiwidget.roundwidget.QMUIRoundButton
+                style="@style/BigButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->handler.submit()}"
+                android:text="@string/submit"
+                app:qmui_backgroundColor="@color/themeColor"
+                app:qmui_isRadiusAdjustBounds="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

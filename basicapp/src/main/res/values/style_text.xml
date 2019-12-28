@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="text_style_white_10">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="text_style_white_11">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="text_style_white_12">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="text_style_white_14">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text_style_white_15">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="text_style_white_16">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text_style_white_18">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="text_style_black_17">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="text_style_black_10">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="text_style_black_12">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="text_style_black_14">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text_style_black_15">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="text_style_666_10">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="text_style_666_11">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="text_style_666_12">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="text_style_666_13">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+
+    <style name="text_style_666_14">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text_style_666_15">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="text_style_666_16">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text_style_999_10">
+        <item name="android:textColor">@color/clr_999</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="text_style_999_11">
+        <item name="android:textColor">@color/clr_999</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="text_style_999_12">
+        <item name="android:textColor">@color/clr_999</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="text_style_999_13">
+        <item name="android:textColor">@color/clr_999</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+
+    <style name="text_style_999_14">
+        <item name="android:textColor">@color/clr_999</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text_style_999_15">
+        <item name="android:textColor">@color/clr_999</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="text_style_999_16">
+        <item name="android:textColor">@color/clr_999</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text_style_blue_14">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text_style_blue_17">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+
+    <style name="text_style_333_12">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="text_style_333_13">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="text_style_333_14">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text_style_333_15">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="text_style_333_16">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text_style_333_17">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="text_style_333_18">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="text_style_theme_12">
+        <item name="android:textColor">@color/themeColor</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="text_style_theme_14">
+        <item name="android:textColor">@color/themeColor</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="text_style_theme_15">
+        <item name="android:textColor">@color/themeColor</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="text_style_theme_18">
+        <item name="android:textColor">@color/themeColor</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="edit_style">
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/clr_333</item>
+        <item name="android:textColorHint">@color/clr_ccc</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="edit_style_telphone" parent="edit_style">
+        <item name="android:inputType">phone</item>
+        <item name="android:maxLength">11</item>
+    </style>
+
+    <style name="edit_style_number_20" parent="edit_style">
+        <item name="android:inputType">phone</item>
+        <item name="android:maxLength">20</item>
+    </style>
+
+    <style name="edit_style_id_card" parent="edit_style">
+        <item name="android:digits">1234567890Xx</item>
+        <item name="android:maxLength">18</item>
+    </style>
+
+
+    <style name="edit_style_name" parent="edit_style">
+        <item name="android:inputType">text</item>
+        <item name="android:maxLength">20</item>
+    </style>
+
+    <style name="edit_style_password" parent="edit_style">
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLength">20</item>
+    </style>
+
+    <style name="edit_style_visible_password" parent="edit_style">
+        <item name="android:inputType">textVisiblePassword</item>
+        <item name="android:maxLength">20</item>
+    </style>
+
+    <style name="edit_style_pay_password" parent="edit_style">
+        <item name="android:inputType">numberPassword</item>
+        <item name="android:maxLength">6</item>
+    </style>
+
+    <style name="edit_style_verify_code" parent="edit_style">
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">6</item>
+    </style>
+
+    <style name="edit_style_address" parent="edit_style">
+        <item name="android:inputType">text</item>
+        <item name="android:maxLength">50</item>
+    </style>
+
+    <style name="text_style_red_13">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+</resources>

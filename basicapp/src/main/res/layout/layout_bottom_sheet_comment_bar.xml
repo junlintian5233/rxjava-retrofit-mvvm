@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/input_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/divider"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:windowSoftInputMode="adjustPan|adjustResize"
+    tools:ignore="KeyboardInaccessibleWidget">
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:layout_weight="1"
+        android:background="@drawable/shape_white_4"
+        android:focusable="true"
+        android:hint="请输入评论"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:textAppearance="@style/text_style_333_15"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/slt_send_btn"
+        android:enabled="false"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:text="发送"
+        android:textColor="@drawable/slt_send_text"
+        android:textSize="15sp" />
+
+</LinearLayout>

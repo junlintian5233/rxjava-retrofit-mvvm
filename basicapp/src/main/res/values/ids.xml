@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toolbar" type="id"> </item>
+    <item name="titleContainer" type="id"> </item>
+    <item name="about_version_code" type="id"></item>
+    <item name="split" type="id"></item>
+    <!-- dialog -->
+    <item name="qmui_dialog_edit_input" type="id"/>
+    <item name="qmui_dialog_edit_right_icon" type="id"/>
+</resources>

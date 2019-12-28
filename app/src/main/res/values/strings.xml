@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">石材网</string>
+    <!--登录注册 start-->
+    <string name="wechat">微信</string>
+    <string name="third_login">第三方登录</string>
+    <string name="pls_input_telphone">请输入手机号码</string>
+    <string name="pls_input_new_telphone">请输入新手机号</string>
+    <string name="not_accout">没有账号 去注册</string>
+    <string name="have_accout">已有账号 去登录</string>
+    <string name="pls_input_pwd">请输入密码</string>
+    <string name="pls_input_pwd_again">请再次输入密码</string>
+    <string name="login">登录</string>
+    <string name="login_quick">立即登录</string>
+    <string name="register">注册</string>
+    <string name="select_school">选择学校</string>
+    <string name="sms_code">短信验证码</string>
+    <string name="image_code">图形验证码</string>
+    <string name="set_login_pwd">设置登录密码</string>
+    <string name="confirm_login_pwd">确认登录密码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="find_pwd">找回密码</string>
+    <string name="submit">提交</string>
+    <string name="not_account">没有账户</string>
+    <string name="pls_input_image_code">请输入图形验证码</string>
+    <string name="pls_input_sms_code">请输入短信验证码</string>
+    <string name="wechat_login_success_to_bind">微信登录成功，请帮定您的手机号</string>
+    <string name="bind_account">绑定账户</string>
+    <string name="pwd_not_same">密码不一致</string>
+    <!--登录注册 end-->
+
+    <string name="person">个人中心</string>
+    <string name="service">上门服务</string>
+    <string name="education">国际教育</string>
+    <string name="shopping">商城</string>
+
+    <!--异常提示 start-->
+    <string name="network_exception">网络异常</string>
+    <string name="netword_connect_timeout">网络连接超时</string>
+    <string name="loading">正在加载</string>
+    <!--异常提示 end-->
+
+    <!--个人中心 start-->
+    <string name="person_center">个人中心</string>
+    <string name="my_order">我的订单</string>
+    <string name="look_all">查看全部</string>
+    <string name="user_info">个人资料</string>
+    <string name="not_setting">未设置</string>
+    <string name="avart">头像</string>
+    <string name="user_name">用户名</string>
+    <string name="sex">性别</string>
+    <string name="birthday">出生日期</string>
+    <string name="tip_modify_username">备注：用户名仅修改一次，请谨慎提交~</string>
+    <string name="modify_username">修改用户名</string>
+    <string name="input_user_name">输入用户名</string>
+    <string name="save">保存</string>
+    <string name="my_message">我的消息</string>
+    <string name="system_msg">系统通知</string>
+    <string name="account_safe">账户安全</string>
+    <string name="login_pwd">登录密码</string>
+    <string name="pay_pwd">支付密码</string>
+    <string name="update_phone">更换手机号</string>
+    <string name="rmb">¥</string>
+    <string name="modify_pwd">修改密码</string>
+    <string name="ok">确定</string>
+    <string name="set_pay_pwd">支付密码设置</string>
+    <string name="pls_input_pay_pwd">请输入支付密码</string>
+    <string name="confirm_pay_pwd">确认支付密码</string>
+    <string name="pls_input_confirm_pay_pwd">请输入确认支付密码</string>
+    <string name="phone">手机号</string>
+    <string name="verify_code">验证码</string>
+    <string name="pls_input_verify_code">请输入验证码</string>
+    <string name="next">下一步</string>
+    <string name="pls_input_detail">请输入详细地址</string>
+    <string name="pls_select_area">请选择所在地区</string>
+    <string name="pls_input_origin_pwd">请输入原密码</string>
+    <string name="pls_input_new_pwd">请输入新密码</string>
+    <string name="pls_confirm_new_pwd">请确认新密码</string>
+    <!--个人中心 end-->
+
+    <!--支付 start-->
+    <string name="pay_money">支付金额</string>
+    <string name="charge_money">充值金额</string>
+    <string name="order_pay">订单支付</string>
+    <string name="balance_">余额:</string>
+    <string name="balance_charge">余额充值</string>
+    <string name="yuan">元</string>
+    <string name="invite_tip">邀请码（选填）</string>
+    <string name="pls_agree_permission">为了获取更好的体验，请同意开启定位、创建设备照片，媒体内容或文件、手机信息权限</string>
+
+    <!--支付 end-->
+</resources>

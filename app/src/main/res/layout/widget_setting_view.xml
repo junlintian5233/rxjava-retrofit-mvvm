@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class="SettingViewDB">
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="22dp"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="22dp">
+
+        <TextView
+            android:id="@+id/tv_left"
+            style="@style/text_style_333_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            style="@style/text_style_999_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/more"
+            android:drawablePadding="5dp"
+            android:gravity="right"
+            android:hint="@string/not_setting"
+            android:textColorHint="@color/clr_ccc" />
+
+    </RelativeLayout>
+</layout>

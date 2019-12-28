@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="AptSystemMsgDb">
+
+        <variable
+            name="position"
+            type="int" />
+
+        <variable
+            name="data"
+            type="com.junzhitian.rxjavaretrofitmvvm.model.bean.SystemMessage" />
+
+        <variable
+            name="handler"
+            type="com.junzhitian.rxjavaretrofitmvvm.fragment.MsgFragment.EventHandler" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/page_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_style_999_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@drawable/shape_e6_10"
+            android:gravity="center"
+            android:paddingLeft="9dp"
+            android:paddingTop="5dp"
+            android:paddingRight="9dp"
+            android:paddingBottom="@dimen/dp_5"
+            android:text="2019.04.20 08:30" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_white_5"
+
+            android:onClick="@{()->handler.onItemClick(position)}"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_13"
+            android:paddingBottom="@dimen/dp_13">
+
+            <TextView
+                style="@style/text_style_333_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_13"
+                android:text="系统升级" />
+
+            <TextView
+                style="@style/text_style_333_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_13"
+                android:layout_marginTop="@dimen/dp_14"
+                android:layout_marginRight="@dimen/dp_13"
+                android:text="APP系统升级，升级时间为2019年4月20日14：30
+--4月21日08：00，升级期间APP暂停使用..." />
+
+            <View
+                style="@style/divider_style"
+                android:layout_marginTop="@dimen/dp_19"
+                android:layout_marginBottom="@dimen/dp_13" />
+
+            <TextView
+                style="@style/text_style_333_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="查看详情" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

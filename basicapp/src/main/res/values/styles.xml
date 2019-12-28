@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="CommonUITheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/hint_text_color</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:buttonStyle">@style/Button</item>
+        <item name="QMUIButtonStyle">@style/CommonUITheme.RoundButton</item>
+        <item name="android:textViewStyle">@style/TextView</item>
+
+    </style>
+
+    <style name="CommonUITheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TranslucentTheme" parent="CommonUITheme">
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+    <!--启动页面-->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:windowBackground">@mipmap/splash</item>
+    </style>
+
+    <style name="RatingBarSmall" parent="Base.Widget.AppCompat.RatingBar.Small"></style>
+
+    <style name="RatingBarlager" parent="Base.Widget.AppCompat.RatingBar.Indicator"></style>
+
+    <style name="RatBaringStyle" parent="Base.Widget.AppCompat.RatingBar.Indicator"></style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.DayNight.Dialog.Alert" />
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="handler"
+            type="com.junzhitian.basicapp.widget.SpinnerWindow.EventHandler" />
+    </data>
+
+    <LinearLayout
+        style="@style/MatchMatch.Vertical"
+        android:background="@color/color_transparent">
+        <View style="@style/divider_style_1dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_view"
+            style="@style/padding_horizontal_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:background="@color/white"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingBottom="@dimen/dp_15">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <View
+            android:id="@+id/mask"
+            style="@style/MatchAuto"
+            android:background="#50000000"
+            android:onClick="@{()->handler.mask()}" />
+    </LinearLayout>
+</layout>
