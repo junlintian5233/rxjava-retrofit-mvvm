@@ -95,10 +95,7 @@ public abstract class BaseActivity<VM extends BaseViewModel, DB extends ViewData
      * 绑定事件
      */
     public void bindEvent() {
-        TitleBar titleBar = findViewById(R.id.titleBar);
-        if (titleBar != null) {
-            titleBar.setLeftAction(this);
-        }
+
     }
 
 
@@ -182,15 +179,6 @@ public abstract class BaseActivity<VM extends BaseViewModel, DB extends ViewData
 
     }
 
-
-    public class BaseEventHandler {
-
-        public void back() {
-            finish();
-        }
-    }
-
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -219,6 +207,12 @@ public abstract class BaseActivity<VM extends BaseViewModel, DB extends ViewData
                 .commit();
     }
 
+    /**
+     * 获取editText 内容
+     *
+     * @param editText
+     * @return
+     */
     public String getText(EditText editText) {
         return editText.getText().toString().trim();
     }

@@ -113,44 +113,6 @@ public class OrderVM extends BaseViewModel<OrderModel, BaseView> {
 
 
     /**
-     * 评价
-     */
-    public void comment(List<String> list, String id, String content, String score) {
-        if (Tools.isEmpty(score)) {
-            mView.showToastMessage("请给予评分");
-            return;
-        }
-        if (Tools.isEmpty(content)) {
-            mView.showToastMessage("请输入评论内容");
-            return;
-        }
-        if (list.size() <= 1) {
-            mView.showToastMessage("选择评论图片");
-            return;
-        }
-
-        Map<String, Object> map = ParmsHelper.create();
-        map.put("id", id);
-        map.put("score", score);
-        map.put("content", content);
-
-        for (int i = 0; i < list.size() - 1; i++) {
-            if (!list.get(i).isEmpty()) {
-                map.put("image[" + i + "]", FileUtils.bitmapToBase64(list.get(i)));
-            }
-        }
-        mView.showLoadDialog();
-        mModel.comment(map, new ResponseCallback<HttpResult<List<LzyResult>>>(mView) {
-            @Override
-            public void onResponse(HttpResult<List<LzyResult>> result) {
-                super.onResponse(result);
-                mView.showToastMessage(result.getMsg());
-                mContext.finish();
-            }
-        });
-    }
-
-    /**
      * 申请售后
      */
     public void applySaleBack(String id, String reason, String info, String money, List<String> list) {

@@ -41,7 +41,7 @@
 
             <EditText
                 android:id="@+id/et_account"
-                style="@style/edit_style_phone"
+                style="@style/edit_style_telphone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/phone"

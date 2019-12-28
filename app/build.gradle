@@ -33,6 +33,10 @@ android {
         enabled = true
     }
 
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
 }
 
 dependencies {
@@ -74,6 +78,6 @@ dependencies {
 //    implementation 'cn.jiguang.sdk:jpush:3.3.4'
 //    implementation 'cn.jiguang.sdk:jcore:2.1.2'
     implementation project(path: ':flycotablayout')
-    compile project(path: ':basicapp')
+    implementation project(path: ':basicapp')
 
 }

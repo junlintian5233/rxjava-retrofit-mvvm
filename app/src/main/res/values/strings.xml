@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">石材网</string>
+    <string name="app_name">BasicApp</string>
     <!--登录注册 start-->
     <string name="wechat">微信</string>
     <string name="third_login">第三方登录</string>
