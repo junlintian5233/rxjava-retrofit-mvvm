@@ -6,7 +6,7 @@
 
         <variable
             name="handler"
-            type="com.junzhitian.rxjavaretrofitmvvm.fragment.ModifyUserNameFragment.EventHandler" />
+            type="com.juntian.rxjavaretrofitmvvm.fragment.user.ModifyUserNameFragment.EventHandler" />
     </data>
 
     <LinearLayout
@@ -16,7 +16,7 @@
         android:background="@color/divider"
         android:orientation="vertical">
 
-        <com.junzhitian.basicapp.qmui.qmuiwidget.titlebar.TitleBar
+        <com.juntian.basicapp.qmui.qmuiwidget.titlebar.TitleBar
             android:id="@+id/title_bar"
             style="@style/WhiteThemeBlackBackTitleBar"
             android:layout_width="match_parent"
@@ -24,7 +24,7 @@
             app:leftAsFinish="false"
             app:title="@string/modify_username">
 
-        </com.junzhitian.basicapp.qmui.qmuiwidget.titlebar.TitleBar>
+        </com.juntian.basicapp.qmui.qmuiwidget.titlebar.TitleBar>
 
 
         <TextView
@@ -36,7 +36,7 @@
             android:paddingBottom="16dp"
             android:text="@string/modify_username" />
 
-        <com.junzhitian.basicapp.qmui.qmuiwidget.edittext.ClearEditText
+        <com.juntian.basicapp.qmui.qmuiwidget.edittext.ClearEditText
             android:id="@+id/et_equipment_name"
             style="@style/text_style_333_16"
             android:layout_width="match_parent"
@@ -50,7 +50,7 @@
             android:singleLine="true" />
 
 
-        <com.junzhitian.basicapp.qmui.qmuiwidget.roundwidget.QMUIRoundButton
+        <com.juntian.basicapp.qmui.qmuiwidget.roundwidget.QMUIRoundButton
             style="@style/BigButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

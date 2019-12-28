@@ -14,7 +14,7 @@
         android:orientation="vertical"
         tools:context=".view.activity.MainActivity">
 
-        <com.junzhitian.basicapp.qmui.qmuiwidget.viewpager.NoScrollViewPager
+        <com.juntian.basicapp.qmui.qmuiwidget.viewpager.NoScrollViewPager
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
             android:layout_height="0dp"

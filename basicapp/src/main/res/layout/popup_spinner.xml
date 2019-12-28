@@ -5,7 +5,7 @@
 
         <variable
             name="handler"
-            type="com.junzhitian.basicapp.widget.SpinnerWindow.EventHandler" />
+            type="com.juntian.basicapp.widget.SpinnerWindow.EventHandler" />
     </data>
 
     <LinearLayout

@@ -17,7 +17,7 @@
         android:background="@color/white"
         android:orientation="vertical">
 
-        <com.junzhitian.basicapp.qmui.qmuiwidget.titlebar.TitleBar
+        <com.juntian.basicapp.qmui.qmuiwidget.titlebar.TitleBar
             style="@style/WhiteThemeBlackBackTitleBar"
             android:layout_width="match_parent"
             android:id="@+id/title_bar"

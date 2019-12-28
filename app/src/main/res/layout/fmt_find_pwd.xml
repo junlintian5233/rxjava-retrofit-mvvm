@@ -6,12 +6,12 @@
 
         <variable
             name="data"
-            type="com.junzhitian.rxjavaretrofitmvvm.model.viewdata.LoginData" />
+            type="com.juntian.rxjavaretrofitmvvm.model.viewdata.LoginData" />
 
 
         <variable
             name="handler"
-            type="com.junzhitian.rxjavaretrofitmvvm.fragment.login.FindPasswordFragment.EventHandler" />
+            type="com.juntian.rxjavaretrofitmvvm.fragment.login.FindPasswordFragment.EventHandler" />
 
     </data>
 
@@ -21,7 +21,7 @@
         android:background="@color/white"
         android:orientation="vertical">
 
-        <com.junzhitian.basicapp.qmui.qmuiwidget.titlebar.TitleBar
+        <com.juntian.basicapp.qmui.qmuiwidget.titlebar.TitleBar
             android:id="@+id/title_bar"
             style="@style/WhiteThemeBlackBackTitleBar"
             android:layout_width="match_parent"
@@ -124,7 +124,7 @@
                 android:layout_marginBottom="30dp" />
 
 
-            <com.junzhitian.basicapp.qmui.qmuiwidget.roundwidget.QMUIRoundButton
+            <com.juntian.basicapp.qmui.qmuiwidget.roundwidget.QMUIRoundButton
                 style="@style/BigButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

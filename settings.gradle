@@ -1,1 +1,1 @@
-include ':app', ':flycotablayout', ':banner', ':addressselector', ':basicapp'
+include ':app',/* ':flycotablayout',*/ ':banner', ':addressselector', ':basicapp'

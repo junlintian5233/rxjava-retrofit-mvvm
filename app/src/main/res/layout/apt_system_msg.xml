@@ -10,11 +10,11 @@
 
         <variable
             name="data"
-            type="com.junzhitian.rxjavaretrofitmvvm.model.bean.SystemMessage" />
+            type="com.juntian.rxjavaretrofitmvvm.model.bean.SystemMessage" />
 
         <variable
             name="handler"
-            type="com.junzhitian.rxjavaretrofitmvvm.fragment.MsgFragment.EventHandler" />
+            type="com.juntian.rxjavaretrofitmvvm.fragment.MsgFragment.EventHandler" />
     </data>
 
     <LinearLayout

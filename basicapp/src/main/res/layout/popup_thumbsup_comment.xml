@@ -5,7 +5,7 @@
 
         <variable
             name="handler"
-            type="com.junzhitian.basicapp.widget.ThumbsUpCommentWindow.EventHandler" />
+            type="com.juntian.basicapp.widget.ThumbsUpCommentWindow.EventHandler" />
     </data>
 
     <LinearLayout

@@ -4,12 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/addressselector/addressselector.iml" filepath="$PROJECT_DIR$/addressselector/addressselector.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/appui/appui.iml" filepath="$PROJECT_DIR$/appui/appui.iml" />
       <module fileurl="file://$PROJECT_DIR$/banner/banner.iml" filepath="$PROJECT_DIR$/banner/banner.iml" />
       <module fileurl="file://$PROJECT_DIR$/basicapp/basicapp.iml" filepath="$PROJECT_DIR$/basicapp/basicapp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/flycotablayout/flycotablayout.iml" filepath="$PROJECT_DIR$/flycotablayout/flycotablayout.iml" />
-      <module fileurl="file://$PROJECT_DIR$/flycotablayout/flycotablayout.iml" filepath="$PROJECT_DIR$/flycotablayout/flycotablayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofitrxjavamvvm.iml" filepath="$PROJECT_DIR$/retrofitrxjavamvvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/shicaiwang.iml" filepath="$PROJECT_DIR$/shicaiwang.iml" />
     </modules>

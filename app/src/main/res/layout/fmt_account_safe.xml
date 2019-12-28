@@ -8,7 +8,7 @@
         <!--type="" />-->
         <variable
             name="handler"
-            type="com.junzhitian.rxjavaretrofitmvvm.fragment.AccountSafeFragment.EventHandler" />
+            type="com.juntian.rxjavaretrofitmvvm.fragment.user.AccountSafeFragment.EventHandler" />
     </data>
 
     <LinearLayout
@@ -17,7 +17,7 @@
         android:background="@color/page_bg"
         android:orientation="vertical">
 
-        <com.junzhitian.basicapp.qmui.qmuiwidget.titlebar.TitleBar
+        <com.juntian.basicapp.qmui.qmuiwidget.titlebar.TitleBar
             android:id="@+id/title_bar"
             style="@style/WhiteThemeBlackBackTitleBar"
             android:layout_width="match_parent"

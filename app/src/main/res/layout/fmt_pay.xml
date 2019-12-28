@@ -6,7 +6,7 @@
 
         <import type="android.view.View" />
 
-        <import type="com.junzhitian.rxjavaretrofitmvvm.common.Config" />
+        <import type="com.juntian.rxjavaretrofitmvvm.common.Config" />
         <!--<variable-->
         <!--name="data"-->
         <!--type="" />-->
@@ -20,7 +20,7 @@
 
         <variable
             name="handler"
-            type="com.junzhitian.rxjavaretrofitmvvm.fragment.PayFragment.EventHandler" />
+            type="com.juntian.rxjavaretrofitmvvm.fragment.PayFragment.EventHandler" />
     </data>
 
     <LinearLayout
@@ -28,7 +28,7 @@
         android:background="@color/page_bg">
 
 
-        <com.junzhitian.basicapp.qmui.qmuiwidget.titlebar.TitleBar
+        <com.juntian.basicapp.qmui.qmuiwidget.titlebar.TitleBar
             android:id="@+id/title_bar"
             style="@style/WhiteThemeBlackBackTitleBar"
             title="@{isPurchase?@string/order_pay:@string/balance_charge}"
@@ -196,7 +196,7 @@
             android:paddingTop="@dimen/dp_10"
             android:paddingBottom="@dimen/dp_10">
 
-            <com.junzhitian.basicapp.qmui.qmuiwidget.roundwidget.QMUIRoundButton
+            <com.juntian.basicapp.qmui.qmuiwidget.roundwidget.QMUIRoundButton
                 style="@style/Button"
                 android:layout_width="match_parent"
                 android:layout_height="44dp"

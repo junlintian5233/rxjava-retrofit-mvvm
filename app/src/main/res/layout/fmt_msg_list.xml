@@ -8,7 +8,7 @@
         <!--type="" />-->
         <variable
             name="handler"
-            type="com.junzhitian.rxjavaretrofitmvvm.fragment.MessageListFragment.EventHandler" />
+            type="com.juntian.rxjavaretrofitmvvm.fragment.MessageListFragment.EventHandler" />
     </data>
 
     <LinearLayout
@@ -17,12 +17,12 @@
         android:background="@color/white"
         android:orientation="vertical">
 
-        <com.junzhitian.basicapp.qmui.qmuiwidget.titlebar.TitleBar
+        <com.juntian.basicapp.qmui.qmuiwidget.titlebar.TitleBar
             style="@style/WhiteThemeBlackBackTitleBar"
             android:layout_width="match_parent"
             android:layout_height="@dimen/titlebar_height"
             app:leftAsFinish="true"
-            app:title="@string/my_message"></com.junzhitian.basicapp.qmui.qmuiwidget.titlebar.TitleBar>
+            app:title="@string/my_message"></com.juntian.basicapp.qmui.qmuiwidget.titlebar.TitleBar>
 
 
         <LinearLayout

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.junzhitian.rxjavaretrofitmvvm">
+    package="com.juntian.rxjavaretrofitmvvm">
 
     <uses-permission android:name="android.permission.CAMERA"/>
     <!--用于访问GPS定位-->
@@ -28,7 +28,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
-        android:name="com.junzhitian.rxjavaretrofitmvvm.CommonApp"
+        android:name="com.juntian.rxjavaretrofitmvvm.CommonApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -38,7 +38,7 @@
         tools:replace="android:label">
 
         <activity
-            android:name="com.junzhitian.rxjavaretrofitmvvm.activity.SplashActivity"
+            android:name="com.juntian.rxjavaretrofitmvvm.activity.SplashActivity"
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,12 +47,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.junzhitian.rxjavaretrofitmvvm.activity.LoginActivity"
+            android:name="com.juntian.rxjavaretrofitmvvm.activity.LoginActivity"
             android:launchMode="singleTask" />
-        <activity android:name="com.junzhitian.rxjavaretrofitmvvm.activity.MainActivity" />
-        <activity android:name="com.junzhitian.rxjavaretrofitmvvm.activity.MessageActivity" />
-        <activity android:name="com.junzhitian.rxjavaretrofitmvvm.activity.UserInfoActivity" />
-        <activity android:name="com.junzhitian.rxjavaretrofitmvvm.activity.AccountSafeActivity" />
+        <activity android:name="com.juntian.rxjavaretrofitmvvm.activity.MainActivity" />
+        <activity android:name="com.juntian.rxjavaretrofitmvvm.activity.MessageActivity" />
+        <activity android:name="com.juntian.rxjavaretrofitmvvm.activity.UserInfoActivity" />
+        <activity android:name="com.juntian.rxjavaretrofitmvvm.activity.AccountSafeActivity" />
     </application>
 
 </manifest>

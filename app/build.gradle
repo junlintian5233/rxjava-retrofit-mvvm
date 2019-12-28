@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.cnsunrun.shicaiwang"
+        applicationId "com.juntian.rxjavaretrofitmvvm"
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
@@ -77,7 +77,7 @@ dependencies {
     //推送
 //    implementation 'cn.jiguang.sdk:jpush:3.3.4'
 //    implementation 'cn.jiguang.sdk:jcore:2.1.2'
-    implementation project(path: ':flycotablayout')
+//    implementation project(path: ':flycotablayout')
     implementation project(path: ':basicapp')
 
 }

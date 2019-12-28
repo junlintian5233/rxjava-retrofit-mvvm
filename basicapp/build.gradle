@@ -52,7 +52,6 @@ dependencies {
     //api 'com.github.florent37:viewanimator:1.0.5'
     //共同头部吸附（tablayout）+ViewPager+ListView http://blog.csdn.net/w7822938/article/details/47173047
     //api 'com.github.cpoopc:scrollablelayoutlib:1.0.1'
-    //api project(path: ':jiaozivideoplayer')
     api 'cn.jzvd:jiaozivideoplayer:7.0.5'
     //选择器
     api 'com.contrarywind:Android-PickerView:4.1.8'

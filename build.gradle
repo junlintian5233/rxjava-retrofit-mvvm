@@ -23,6 +23,12 @@ allprojects {
         mavenCentral()
 
     }
+
+    afterEvaluate {
+        tasks.withType(JavaCompile.class) {
+            options.compilerArgs << "-Xmaxerrs" << "500"
+        }
+    }
 }
 
 task clean(type: Delete) {
