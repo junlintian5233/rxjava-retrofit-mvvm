@@ -6,9 +6,6 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-/**
- * Created by WQ on 2017/10/12.
- */
 
 public class RecycleHelper {
     public static void setLinearLayoutManager(RecyclerView recyclerView, int orientation){
