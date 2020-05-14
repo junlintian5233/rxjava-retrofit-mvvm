@@ -16,7 +16,7 @@ import androidx.core.app.NotificationManagerCompat;
  * @时间:2019/9/19
  * @描述:
  */
-public class PermissionUtil {
+public class NofificationPermissionUtil {
 
     public static void requestNotificationPermission(final Activity context, final int requestCode, final PermissionAlertCallback callback) {
         NotificationManagerCompat notification = NotificationManagerCompat.from(context);
